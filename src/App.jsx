@@ -1,10 +1,15 @@
+import CartComponent from './add-to-cart'
+import ProductItemComponent from './desert'
 import './index.css'
 
 function App() {
 
   return (
     <>
-    <h1 className='text-blue-500'>Hello World</h1>
+    <div className="App flex bg-rose-50 justify-between px-30 pt-15">
+      <ProductItemComponent />
+      <CartComponent />
+    </div>
     </>
   )
 }
