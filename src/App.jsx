@@ -7,7 +7,12 @@ function App() {
   return (
     <>
     <div className="App flex justify-center pt-15">
-      <ProductItemComponent />
+      <ProductItemComponent 
+      name='Waffle'
+      fullName='waffle with berries'
+      price= '$6.50'
+      image='./imgs/image-waffle-desktop.jpg'
+      />
       <CartComponent />
     </div>
     </>
