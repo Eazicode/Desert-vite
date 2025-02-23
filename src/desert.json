@@ -11,14 +11,14 @@
       "id": 2,
       "category": "Creme Brulee",
       "name": "Vanilla Bean Creme Brulee",
-      "price": 7.0,
+      "price": 7.00,
       "imageClass": "./imgs/image-creme-brulee-desktop.jpg"
     },
     {
       "id": 3,
       "category": "Macaron",
       "name": "Macaron Mix of Five",
-      "price": 8.0,
+      "price": 8.00,
       "imageClass": "./imgs/image-macaron-desktop.jpg"
     },
     {
@@ -32,35 +32,35 @@
       "id": 5,
       "category": "Baklava",
       "name": "Pistachio Baklava",
-      "price": 4.0,
+      "price": 4.00,
       "imageClass": "./imgs/image-baklava-desktop.jpg"
     },
     {
       "id": 6,
       "category": "Pie",
       "name": "Lemon Meringue Pie",
-      "price": 5.0,
+      "price": 5.00,
       "imageClass": "./imgs/image-meringue-desktop.jpg"
     },
     {
       "id": 7,
       "category": "Cake",
       "name": "Red Velvet Cake",
-      "price": 4.5,
+      "price": 4.50,
       "imageClass": "./imgs/image-cake-desktop.jpg"
     },
     {
       "id": 8,
       "category": "Panna",
       "name": "Panna Cotta",
-      "price": 4.5,
+      "price": 4.50,
       "imageClass": "./imgs/image-panna-cotta-desktop.jpg"
     },
     {
       "id": 9,
       "category": "Key Lime Pie",
       "name": "Lime Pie",
-      "price": 6.5,
+      "price": 6.50,
       "imageClass": "./imgs/image-brownie-desktop.jpg"
     }
   ]

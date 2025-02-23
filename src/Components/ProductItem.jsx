@@ -6,7 +6,7 @@ const ProductItemComponent = ({name, fullName, price,image}) => {
   return (
 
     <div>
-      <p>Desserts</p>
+      <p className="text-[#4c0519] text-3xl font-bold">Desserts</p>
       <div>
         <div className={`flex justify-center items-end w-63 h-60 rounded-2xl bg-cover bg-center`} style={{backgroundImage: `url(${image})`}}>
 
