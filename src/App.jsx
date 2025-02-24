@@ -14,27 +14,28 @@ function App() {
   }, [deserts]);
   return (
     <>
-      <div className="App pt-15 grid md:grid-cols-2 lg:grid-cols-3 max-w-xl w-max px-10 mx-auto" >
-        {
-          
-          /* {map thru deserts here} */
-          deserts.map( (desert) => {
-            console.log(desert)
-            return     <ProductItemComponent  key={desert.id}
-            id={1}
-            name={desert.name}
-            Category={desert.Category}
-            price={(desert.price.toFixed(2))}
-            image={desert.imageClass}
-          />
-          })
-        }
-        <Cart>
-          <CartItem
+      <div className="App md:flex md:px-25 pt-15" >
+        <div className="w-62 mx-auto md:grid md:grid-cols-3 md:w-2/3 ">
+          {
+            /* {map thru deserts here} */
+            deserts.map( (desert) => {
+              console.log(desert)
+              return     <ProductItemComponent  key={desert.id}
+              id={1}
+              name={desert.name}
+              category={desert.category}
+              price={(desert.price.toFixed(2))}
+              image={desert.imageClass}
+            />
+            })
+          }
+        </div>
+        <Cart className="md:w-1/3 " >
+          {/* <CartItem
             name="waffle with berries"
             price={6.5}
             amount={2}
-          />
+          /> */}
         </Cart>
       </div>
     </>
