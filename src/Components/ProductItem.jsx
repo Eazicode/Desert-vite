@@ -5,8 +5,8 @@ const ProductItemComponent = ({name, fullName, price,image}) => {
 
   return (
 
-    <div>
-      <p>Desserts</p>
+    <div className="w-max ">
+      
       <div>
         <div className={`flex justify-center items-end w-63 h-60 rounded-2xl bg-cover bg-center`} style={{backgroundImage: `url(${image})`}}>
 

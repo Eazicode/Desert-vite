@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import CartComponent from "./Components/Cart";
+import Cart from "./Components/Cart";
 import ProductItemComponent from "./Components/ProductItem";
-// import Cart from './Components/Cart'
+import CartItem from "./Components/CartItem";
 import data from "./desert.json";
 import "./index.css";
 
@@ -10,23 +10,32 @@ function App() {
 
   useEffect(() => {
     setDeserts(data.desert);
-    console.log(deserts);
+    // console.log(deserts);
   }, [deserts]);
   return (
     <>
-      <div className="App flex justify-center pt-15">
-        <ProductItemComponent
-          id={1}
-          name="Waffle"
-          Category="waffle with berries"
-          price="$6.50"
-          image="/imgs/image-waffle-desktop.jpg"
-        />
+      <div className="App pt-15 grid md:grid-cols-2 lg:grid-cols-3 max-w-xl w-max px-10 mx-auto" >
         {
+          
           /* {map thru deserts here} */
-          // deserts.map()
+          deserts.map( (desert) => {
+            console.log(desert)
+            return     <ProductItemComponent  key={desert.id}
+            id={1}
+            name={desert.name}
+            Category={desert.Category}
+            price={(desert.price.toFixed(2))}
+            image={desert.imageClass}
+          />
+          })
         }
-        <CartComponent />
+        <Cart>
+          <CartItem
+            name="waffle with berries"
+            price={6.5}
+            amount={2}
+          />
+        </Cart>
       </div>
     </>
   );
