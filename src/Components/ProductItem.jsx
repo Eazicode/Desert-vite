@@ -6,17 +6,23 @@ const ProductItemComponent = ({name, category, price,image}) => {
   return (
 
     <div>
-      
-      <div className="w-63 ">
-        <div className={`flex justify-center items-end h-60 w-full rounded-2xl bg-cover bg-center`} style={{backgroundImage: `url(${image})`}}>
 
-        <button>Add to Cart</button>
+
+      
+      <div className="w-63">
+        <div className={`flex justify-center items-end h-60 w-full rounded-2xl bg-cover bg-center mb-5`} style={{backgroundImage: `url(${image})`}}>
+
+          <div className="flex items-center gap-2 -mb-5 bg-white px-5 py-3 rounded-3xl ">
+          <i class="fa-solid fa-cart-plus text-[#c73a0f]"></i>
+          <button className="text-[#c73a0f] font-bold text-xs">Add to Cart</button>
+
+          </div>
         </div>
 
-        <div>
-          <p>{name}</p>
-          <p>{category}</p>
-          <p>{price}</p>
+        <div className="mb-8">
+          <p className="text-[#4c0519] opacity-50 text-sm">{category}</p>
+          <p className="text-[#78350f] text-lg font-bold">{name}</p>
+          <p className="text-[#c73a0f] font-bold">{`$${price}`}</p>
         </div>
       </div>
     </div>
