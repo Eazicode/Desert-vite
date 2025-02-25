@@ -1,9 +1,11 @@
-const  CartItem= ({name, price, amount,}) => {
+import { useState } from "react";
+
+const  CartItem= ({category, price, amount,}) => {
 
   return ( 
     <>
       <div>
-        <p>{name}</p>
+        <p>{category}</p>
         <p>
           <span className="pr-3 text-[#C73A0F] font-bold">{`${amount}x`}</span>
           <span className="pr-3">{`@${price.toFixed(2)}`}</span>
