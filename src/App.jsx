@@ -21,7 +21,7 @@ function App() {
             {
               /* {map thru deserts here} */
               deserts.map( (desert) => {
-                console.log(desert)
+                // console.log(desert)
                 return     <ProductItemComponent  key={desert.id}
                 id={1}
                 name={desert.name}
@@ -35,11 +35,11 @@ function App() {
         </div>
        
         <Cart className="mx-auto" >
-          <CartItem
+          {/* <CartItem
             name="waffle with berries"
             price={6.5}
             amount={2}
-          />
+          /> */}
         </Cart>
       </div>
     </>

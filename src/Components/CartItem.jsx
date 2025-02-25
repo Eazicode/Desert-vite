@@ -1,4 +1,5 @@
 const  CartItem= ({name, price, amount,}) => {
+
   return ( 
     <>
       <div>
