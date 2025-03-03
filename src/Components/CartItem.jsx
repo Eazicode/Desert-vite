@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const  CartItem= ({category, price, amount,}) => {
 
   return ( 

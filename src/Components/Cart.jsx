@@ -1,16 +1,16 @@
-  const Cart = ({children}) => {
+  const Cart = ({children, totalSum} ) => {
     return ( 
       <>
       {children ?
       
-      <div className="mx-auto md:mx-0 bg-white w-72 h-68 rounded-2xl pt-8 px-5">
-       <p className="text-3xl font-bold mb-5 text-[#C73A0F]" >Your Cart (0)</p>
+      <div className="mx-auto md:mx-0 bg-white w-72 h-fit rounded-2xl pt-8 px-5">
+        <p className="text-3xl font-bold mb-5 text-[#C73A0F]" >Your Cart (0)</p>
 
         {children}
 
         <div className="flex justify-between my-5">
           <p>Order Total</p>
-          <p>$45.00</p>
+          <p>{`$${totalSum.toFixed(2)}`}</p>
         </div>
 
         <div className="w-42 mx-auto">
@@ -18,7 +18,7 @@
         </div>
       </div> :
 
-      <div className="bg-white w-72 h-68 rounded-2xl pt-8 px-5 mx-auto md:mx-0">
+      <div className="bg-white w-72 h-fit rounded-2xl pt-8 px-5 mx-auto md:mx-0">
         <div className="w-full"> 
           <p className="text-3xl font-bold mb-5 ps-8" >Your Cart (0)</p>
 
